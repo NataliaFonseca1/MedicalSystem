@@ -1,0 +1,25 @@
+
+
+*{
+  box-sizing: border-box;
+  font-family: Roboto,sans-serif ;
+  list-style: none;
+}
+body {
+
+  background-color: #ffffff;
+}
+
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 676px) {
+    max-width: 92%;
+    padding: 0 auto;
+  }
+  @media (min-width: 768px) and (max-width: 1020px) {
+    max-width: 95%;
+    padding: 0 auto;
+  }
+}
