@@ -81,7 +81,7 @@ const NurseDashboard = () => {
           ) : null}
         </Form.Group>
 
-        <Form.Group controlId="formPeso" style={{ marginBottom: '20px' }}>
+        <Form.Group controlId="formPeso">
           <Form.Label style={{ textAlign: 'left', display: 'block' }}>Peso (Kg):</Form.Label>
           <Form.Control type="number" placeholder="Digite o peso" {...formik.getFieldProps('weight')} />
           {formik.touched.weight && formik.errors.weight ? (

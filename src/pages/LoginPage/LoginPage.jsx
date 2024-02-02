@@ -1,19 +1,36 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo.png'
+import axios from 'axios';
+import { useAuth } from '../../AuthContext'
+
 const LoginPage = () => {
   const [userName, setUserName] = useState('');
   const [userCpf, setUserCpf] = useState('');
   const [userPassword, setUserPassword] = useState('');
   const [userType, setUserType] = useState('doctor');
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const handleLogin = () => {
-    if (userType === 'doctor') {
-      navigate('/doctor');
-    } else if (userType === 'nurse') {
-      navigate('/nurse');
-    }
+    const loginUser = async () => {
+      try {
+        const response = await axios.post('http://localhost:8080/login', {
+          name: userName,
+          cpf: userCpf,
+          password: userPassword,
+          role: userType,
+        });
+        const { token, role } = response.data;
+        login({ token, role });
+        if (role === 'ROLE_MEDICO') {
+          navigate('/doctor');
+        } else if (role === 'ROLE_ENFERMEIRO') {
+          navigate('/nurse');
+        }
+      } catch (error) {
+        console.error('Erro no login:', error);
+      }
   };
 
   return (
@@ -76,5 +93,5 @@ const LoginPage = () => {
     </div>
   );
 };
-
-export default LoginPage;
+}
+export default LoginPage
