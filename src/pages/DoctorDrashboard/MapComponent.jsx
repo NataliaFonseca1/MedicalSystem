@@ -45,9 +45,9 @@ const MapComponent = () => {
 
   return (
     <MapContainer
-      center={[-15.77972, -47.92972]}
-      zoom={10}
-      style={{ height: '100px', width: '100%' }}
+      center={[-14.235, -53.18]}
+      zoom={4}
+      style={{ height: '80vh', width: '100%' }} // Defina a altura responsiva
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

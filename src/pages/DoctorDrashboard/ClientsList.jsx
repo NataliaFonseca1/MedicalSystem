@@ -90,13 +90,21 @@ const ClientList = () => {
   const handleLogout = () => {
     window.location.href = '/'
   }
+
   return (
     <div className="container mt-4">
       <h2>Lista de Clientes</h2>
       <div className="row">
         {clients.map((client) => (
-          <div key={client.id} className="col-md-4 mb-3">
-            <div className="card">
+          <div key={client.id} className="col-md-4 mb-4">
+            <div
+              className="card"
+              style={{
+                maxWidth: '300px',
+                marginLeft: 'auto',
+                marginRight: 'auto'
+              }}
+            >
               <div className="card-body">
                 <h5 className="card-title">
                   {editingClientId === client.id ? (
@@ -126,7 +134,7 @@ const ClientList = () => {
                   )}
                 </p>
                 <p className="card-text">
-                  Altura(m):{' '}
+                  Altura (m):{' '}
                   {editingClientId === client.id ? (
                     <Form.Control
                       type="text"
@@ -196,4 +204,5 @@ const ClientList = () => {
     </div>
   )
 }
+
 export default ClientList

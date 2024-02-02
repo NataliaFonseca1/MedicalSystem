@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 //import { AuthProvider } from './AuthContext'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import NurseDrashboard from './pages/NuserDrashboard/NurseDrashboard'
 import LoginPage from './pages/LoginPage/LoginPage'
-import DoctorHomePage from './pages/DoctorHomePage'
+import DoctorHomePage from './pages/DoctorDrashboard/DoctorHomePage'
 
 function App() {
   return (

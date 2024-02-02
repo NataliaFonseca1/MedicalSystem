@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import DoctorDashboard from './DoctorDrashboard/DoctorDrashboard'
+import DoctorDashboard from './ClientAdd'
 import MapComponent from './MapComponent'
 import ClientList from './ClientsList'
 import NurseList from './NursesControl'
