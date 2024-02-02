@@ -1,8 +1,6 @@
 
 
 
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
-
 Pré-requisitos
 
 Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
@@ -13,7 +11,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-projeto-frontend.git
+git clone https://github.com/NataliaFonseca1/MedicalSystem.git
 cd seu-projeto-frontend
 
 
