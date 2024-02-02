@@ -1,29 +1,30 @@
 
 
 
-Pré-requisitos
+## Pré-requisitos
 
 Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 - [Node.js](https://nodejs.org/): Ambiente de execução JavaScript baseado no Chrome V8.
 - [npm](https://www.npmjs.com/): Gerenciador de pacotes para JavaScript.
 
-Clonar o Repositório
+## Clonar o Repositório
 
 git clone https://github.com/NataliaFonseca1/MedicalSystem.git
+
 cd seu-projeto-frontend
 
 
-INSTALAR AS DEPENDENCIAS:
+## INSTALAR AS DEPENDENCIAS:
 
 npm install
 
-EXECUTAR O PROJETO:
+## EXECUTAR O PROJETO:
 
 npm run dev
 
 
-Linguagens, frameworks e bibliotecas:
+## Linguagens, frameworks e bibliotecas:
 
 JavaScript
 React.js
