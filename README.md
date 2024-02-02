@@ -26,11 +26,11 @@ npm run dev
 
 ## Linguagens, frameworks e bibliotecas:
 
-JavaScript
-React.js
-Booststrap
-Formik e Yup para formulários
-Eslint, Prettier e editor config para execução e organização do código
+JavaScript,
+React.js,
+Booststra,
+Formik e Yup para formulários,
+eslint, prettier e editor config para execução e organização do código e 
 LeafletJs
 
 
