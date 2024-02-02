@@ -10,7 +10,6 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 Clonar o Repositório
 
-```bash
 git clone https://github.com/NataliaFonseca1/MedicalSystem.git
 cd seu-projeto-frontend
 
