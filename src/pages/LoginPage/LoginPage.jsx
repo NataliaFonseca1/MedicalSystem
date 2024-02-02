@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import axios from 'axios'
+import InputMask from 'react-input-mask'
 
 const LoginPage = () => {
   const [userName, setUserName] = useState('')
@@ -73,7 +74,8 @@ const LoginPage = () => {
         >
           CPF:
         </label>
-        <input
+        <InputMask
+          mask="999.999.999-99"
           type="text"
           className="form-control"
           value={userCpf}
