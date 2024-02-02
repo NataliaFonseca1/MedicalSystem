@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet'
 import axios from 'axios'
+import 'leaflet/dist/leaflet.css'
 
 const MapComponent = () => {
   const [ufData, setUfData] = useState([])
@@ -44,17 +45,19 @@ const MapComponent = () => {
   }
 
   return (
-    <MapContainer
-      center={[-14.235, -53.18]}
-      zoom={4}
-      style={{ height: '80vh', width: '100%' }} // Defina a altura responsiva
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-      <GeoJSON data={ufData} onEachFeature={onEachUf} />
-    </MapContainer>
+    <div className="container mt-4 d-flex justify-content-center align-items-center">
+      <MapContainer
+        center={[-14.235, -53.18]}
+        zoom={4}
+        style={{ height: '60vh', width: '70%' }}
+      >
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        <GeoJSON data={ufData} onEachFeature={onEachUf} />
+      </MapContainer>
+    </div>
   )
 }
 
