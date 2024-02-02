@@ -1,3 +1,43 @@
+
+
+
+Uma breve descrição sobre o que esse projeto faz e para quem ele é
+
+Pré-requisitos
+
+Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
+
+- [Node.js](https://nodejs.org/): Ambiente de execução JavaScript baseado no Chrome V8.
+- [npm](https://www.npmjs.com/): Gerenciador de pacotes para JavaScript.
+
+Clonar o Repositório
+
+```bash
+git clone https://github.com/seu-usuario/seu-projeto-frontend.git
+cd seu-projeto-frontend
+
+
+INSTALAR AS DEPENDENCIAS:
+
+npm install
+
+EXECUTAR O PROJETO:
+
+npm run dev
+
+
+Linguagens, frameworks e bibliotecas:
+
+JavaScript
+React.js
+Booststrap
+Formik e Yup para formulários
+Eslint, Prettier e editor config para execução e organização do código
+LeafletJs
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
